@@ -1,0 +1,144 @@
+
+<div class="card">
+    <form [formGroup]="editForm" (ngSubmit)="EditProduct()" >
+        <div class="card-header">
+            <h1>Edit Form</h1>
+            {{title}}
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class= "table">
+                    <tbody>
+                        <tr>
+                            <div class="formGroup">
+                            <td><label> Product Id</label></td>
+                            <td><input type="text" class='form-control' formControlName="productId" placeholder="ID" name="productId"></td>
+                            <!-- <div class="invalid-feedback" *ngIf="submitted && productItem.id.errors?.required">
+                                Id is required.
+                              </div> -->
+                        </div>
+                        </tr>
+                        <tr>
+                            <div class="formGroup">
+                            <td><label> Product Name</label></td>
+                            <td><input type="text" class='form-control' formControlName= "productName" placeholder="Name" name="productName"></td>
+                            <!-- <div class="invalid-feedback" *ngIf="submitted && productItem.name.errors?.required">
+                                Name is required.
+                              </div>    -->
+                        </div>
+                        </tr>
+                        <tr>
+                            <div class="formGroup">
+                            <td><label> Product Code</label></td>
+                            <td><input type="text" class='form-control' formControlName= "productCode" placeholder="Code" name="productCode"></td>
+                            <!-- <div class="invalid-feedback" *ngIf="submitted && productForm..errors?.required">
+                                Code is required.
+                              </div>    -->
+                        </div>
+                        </tr>
+                        <tr>
+                            <div class="formGroup">
+                            <td><label> Release Date</label></td>
+                            <td><input type="text" class='form-control' formControlName= "releaseDate" placeholder="date" name="releaseDate"></td>
+                            <!-- <div class="invalid-feedback" *ngIf="submitted && productForm..errors?.required">
+                                Date is required.
+                              </div>    -->
+                        </div>
+                        </tr>
+                        <tr>
+                            <div class="formGroup">
+                            <td><label> Description</label></td>
+                            <td><input type="text" class='form-control' formControlName= "description" placeholder="Describe" name="description"></td>
+                            <!-- <div class="invalid-feedback" *ngIf="submitted && productForm..errors?.required">
+                                Description is required.
+                              </div>    -->
+                        </div>
+                        </tr>
+                        <tr>
+                            <div class="formGroup">
+                            <td><label> Price</label></td>
+                            <td><input type="text" class='form-control' formControlName= "price" placeholder="Price" name="price"></td>
+                            <!-- <div class="invalid-feedback" *ngIf="submitted && productForm..errors?.required">
+                                Price is required.
+                              </div>    -->
+                        </div>
+                        </tr>
+                        <tr>
+                            <div class="formGroup">
+                            <td><label> Star Rating</label></td>
+                            <td><input type="text" class='form-control' formControlName= "starRating" placeholder="Rate" name="starRating"></td>
+                            <!-- <div class="invalid-feedback" *ngIf="submitted && productForm..errors?.required">
+                                Rating is required.
+                              </div>    -->
+                        </div>
+                        </tr>
+                        <tr>
+                            <div class="formGroup">
+                            <td><label> Image</label></td>
+                            <td><input type="text" class='form-control' formControlName= "imageUrl" placeholder="img" name="imageUrl"></td>
+                            <!-- <div class="invalid-feedback" *ngIf="submitted && productForm..errors?.required">
+                                Image is required.
+                              </div>    -->
+                        </div>
+                        </tr>
+                       
+                        <tr>
+                            <div class='formGroup'>
+                            <td></td>
+                            <td><input type="submit" value="submit"></td>
+                        </div>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+<!-- <div class="card">
+    <form  (ngSubmit)="EditProduct(productItem.productId)">
+        <div class="card-header">
+            {{title}}
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class= "table">
+                    <tbody>
+                        <tr>
+                            <td><label> Product Id</label></td>
+                            <td><input type="text" name="p_id" [(ngModel)]="productItem.productId"></td>
+                        </tr>
+                        <tr>
+                            <td><label> Product Name</label></td>
+                            <td><input type="text" name="p_name"  [(ngModel)]="productItem.productName"></td>
+                        </tr>
+                        <tr><td><label> Product Code</label></td>
+                            <td><input type="text" name="p_code"  [(ngModel)]="productItem.productCode"></td>
+                        </tr>
+                        <tr><td><label> Release Date</label></td>
+                            <td><input type="text" name="p_date"  [(ngModel)]="productItem.releaseDate"></td>
+                        </tr>
+                        <tr><td><label> Description</label></td>
+                            <td><input type="text" name="p_desc" [(ngModel)]="productItem.description"></td>
+                        </tr>
+                        <tr><td><label> Price</label></td>
+                            <td><input type="text" name="p_price"  [(ngModel)]="productItem.price"></td>
+                        </tr>
+                        <tr><td><label> Product Rating</label></td>
+                            <td><input type="text" name="p_rating" [(ngModel)]="productItem.starRating"></td>
+                        </tr>
+                        <tr><td><label> Image</label></td>
+                            <td><input type="text" name="p_image"[(ngModel)]="productItem.imageUrl"></td>
+                        </tr>
+                        <tr><td></td>
+                            <td><input type="submit" value="Update"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div> -->
+

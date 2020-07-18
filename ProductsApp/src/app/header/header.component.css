@@ -1,0 +1,22 @@
+.card-header{
+    background-color: bisque
+   
+}
+a{
+    color:  rgb(155, 11, 83);
+    margin: -1px;
+    padding: 2px;
+    font-weight: 400;
+}
+h1{
+    background-color: rgb(155, 11, 83);
+    /* color: rgb(243, 243, 83); */
+    color: lightcoral;
+    margin: 0px;
+    padding-top: 4px;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.header{
+    height: 5rem;
+}

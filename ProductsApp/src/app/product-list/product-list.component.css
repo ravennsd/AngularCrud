@@ -1,0 +1,12 @@
+.card-header{
+    background-color: bisque;
+    color:  rgb(155, 11, 83);
+    margin: 0px;
+    font-family: monospace;
+    text-align: center;
+    font-size: x-large;
+}
+.table{
+    background-color: rgb(255, 205, 196);
+    color:  rgb(155, 11, 83)
+}
